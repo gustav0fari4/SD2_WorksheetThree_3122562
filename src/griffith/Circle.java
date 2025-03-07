@@ -22,18 +22,18 @@ public class Circle extends Shape {
 	//Override the area method for Circle
 	@Override
 	public double area() {
-		return 0;
+		return Math.PI * radius * radius;
 	}
 
 	//Override the perimeter method for Circle
 	@Override
 	public double perimeter() {
-		return 0;
+		return 2 * Math.PI * radius;
 	}
-	
+		
 	//Override the toString method to include the radius
 	@Override
 	public String toString() {
-		return null;
+		return super.toString() + ", Radius: " + radius;
 	}
 }
