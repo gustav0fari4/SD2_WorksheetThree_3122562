@@ -30,5 +30,18 @@ class ShapeTest {
 		//Test the toString method
 		assertEquals("Shape: Rhombus, Side: 4.0, Diagonal 1: 5.0, Diagonal 2: 6.0", rhombus.toString());
 	}
+	
+	//Unit test for RightAngledTriangle
+	@Test
+	public void testRightAngledTriangle() {
+		RightAngledTriangle triangle = new RightAngledTriangle("Right Angled Triangle", 3.0, 4.0);
+		//Test the area
+		assertEquals(3.0 * 4.0 / 2.0, triangle.area(), EPSILON);
+		//Test the perimeter
+		double hypotenuse = Math.sqrt(3.0 * 3.0 + 4.0 * 4.0);
+		assertEquals(3.0 + 4.0 + hypotenuse, triangle.perimeter(), EPSILON);
+		//Test the toString method
+		assertEquals("Shape: Right Angled Triangle, Base: 3.0, Height: 4.0", triangle.toString());
+	}
 
 }
