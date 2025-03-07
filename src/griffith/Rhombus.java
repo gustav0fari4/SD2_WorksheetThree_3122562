@@ -38,19 +38,19 @@ public class Rhombus extends Shape{
 	//Override the perimeter method for Rhombus
 	@Override
 	public double area() {
-		return (diagonal1 * diagonal2) / 2;
+		return 0;
 	}
 	
 	//Override the perimeter method for Rhombus
 	@Override
 	public double perimeter() {
-		return 4 * side;
+		return 0;
 	}
 	
 	//Override the toString methods to include the side and diagonals
 	@Override
 	public String toString() {
-		return super.toString() + ", Side: " + side + ", Diagonal 1: " + diagonal1 + ", Diagonal 2: " + diagonal2;
+		return null;
 	}
 	
 	
